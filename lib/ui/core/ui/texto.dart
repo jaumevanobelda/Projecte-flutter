@@ -3,14 +3,26 @@ import 'package:flutter/material.dart';
 enum TipoTexto { title, subtitle, body, secondary }
 
 class Texto extends StatelessWidget {
-  const new({super.key, required this.texto, this.tipo = TipoTexto.body});
+  const Texto({
+    super.key,
+    required this.texto,
+    this.tipo = TipoTexto.body,
+    this.estilo,
+    this.maxLines,
+    this.overflow,
+  });
   final String texto;
   final TipoTexto tipo;
+  final TextStyle? estilo;
+  final int? maxLines;
+  final TextOverflow? overflow;
   @override
   Widget build(BuildContext context) {
     return Text(
       texto,
-      style: switch (tipo) {
+      maxLines: maxLines,
+      overflow: overflow,
+      style: (switch (tipo) {
         TipoTexto.title => const TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.bold,
@@ -29,7 +41,7 @@ class Texto extends StatelessWidget {
           fontSize: 14,
           color: Color(0xFF0F172A),
         ),
-      },
+      }).merge(estilo),
     );
   }
 }
