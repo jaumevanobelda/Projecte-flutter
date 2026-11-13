@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
             TextFormField(
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(),
-                labelText: 'Nombre de usuario',
+                labelText: 'Correo electrónico',
               ),
             ),
             TextFormField(
