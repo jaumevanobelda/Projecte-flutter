@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum TipoTexto { title, subtitle, body }
+enum TipoTexto { title, subtitle, body, secondary }
 
 class Texto extends StatelessWidget {
   const new({super.key, required this.texto, this.tipo = TipoTexto.body});
@@ -23,6 +23,10 @@ class Texto extends StatelessWidget {
         ),
         TipoTexto.body => const TextStyle(
           fontSize: 16,
+          color: Color(0xFF0F172A),
+        ),
+        TipoTexto.secondary => const TextStyle(
+          fontSize: 14,
           color: Color(0xFF0F172A),
         ),
       },
