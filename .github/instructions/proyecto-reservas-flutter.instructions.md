@@ -17,6 +17,7 @@ applyTo: "lib/**/*.dart"
 
 ## Arquitectura y estructura
 
+- Usar como referencia complementaria para la estructura del proyecto la guía [Proyecto integrador: entrega 1](https://jovisal1.github.io/ApuntesPMDM/proyecto-integrador/entrega-1/), adaptándola a las convenciones y al alcance definidos en estas instrucciones.
 - Mantener una separación clara entre `ui`, `domain` y `data`.
 - Organizar las pantallas por funcionalidad:
   - `lib/ui/acceso/ui/`: login y registro.

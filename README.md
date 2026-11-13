@@ -15,3 +15,10 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+- Primary:     0xFF0563EB
+- Secondary:   0xFF0EA5E9
+- Accent/CTA:  0xFFF59E0B
+- Background:  0xFFF8FAFC
+- Surface:     0xFFFFFFFF
+- Text:        0xFF0F172A
