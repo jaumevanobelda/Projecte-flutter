@@ -52,8 +52,19 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Reservas',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2563EB)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2563EB))
+            .copyWith(
+              primary: const Color(0xFF2563EB),
+              onPrimary: const Color(0xFFFFFFFF),
+              secondary: const Color(0xFF0EA5E9),
+              onSecondary: const Color(0xFF0F172A),
+              tertiary: const Color(0xFFF59E0B),
+              onTertiary: const Color(0xFF0F172A),
+              surface: const Color(0xFFFFFFFF),
+              onSurface: const Color(0xFF0F172A),
+            ),
         scaffoldBackgroundColor: const Color(0xFFF8FAFC),
+        cardColor: const Color(0xFFFFFFFF),
         useMaterial3: true,
       ),
       home: _sesionIniciada
